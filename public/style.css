@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.navbar {
+    background: #c9e308;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #bef65c;
+}
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #7bb508,
+        #080808
+    );
+
+    color: rgb(255, 255, 255);
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.music-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+     color: #849f0b;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+
+    background: white;
+    color: #b2bd15;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.features {
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: rgb(169, 205, 7);
+
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #f6f5f6;
+    line-height: 1.6;
+}
+
+.songs-header {
+    text-align: center;
+
+    padding: 60px 20px 30px;
+}
+
+.songs-header h1 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.songs-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.songs-section {
+    padding: 30px 8% 70px;
+}
+
+.songs-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.song-card {
+    background: rgb(199, 213, 10);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.song-number {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #000000;
+}
+
+.album-icon {
+    width: 60px;
+    height: 60px;
+
+    background: linear-gradient(
+        135deg,
+        #4d2b3a,
+        #747912
+    );
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-info h2 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.song-info p {
+    color: #f8f5f5;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.genre {
+    display: inline-block;
+
+    background: #fafbfb;
+
+    color: #bac016;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+footer {
+    background: #bec806;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .songs-header h1 {
+        font-size: 30px;
+    }
+
+    .song-card {
+        padding: 18px;
+    }
+
+}

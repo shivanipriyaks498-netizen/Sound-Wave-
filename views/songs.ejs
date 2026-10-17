@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Songs - <%= appName %></title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            🎵 <%= appName %>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="/">Home</a>
+
+            <a href="/songs">Songs</a>
+
+        </div>
+
+    </nav>
+
+    <!-- Songs Header -->
+
+    <section class="songs-header">
+
+        <h1>🎵 Our Music Collection</h1>
+
+        <p>
+
+            <%= tagline %>
+
+        </p>
+
+    </section>
+
+    <!-- Songs Container -->
+
+    <section class="songs-section">
+
+        <div class="songs-container">
+
+            <% songs.forEach((song, index) => { %>
+
+                <div class="song-card">
+
+                    <div class="song-number">
+
+                        <%= index + 1 %>
+
+                    </div>
+
+                    <div class="album-icon">
+
+                        🎵
+
+                    </div>
+
+                    <div class="song-info">
+
+                        <h2>
+
+                            <%= song.title %>
+
+                        </h2>
+
+                        <p>
+
+                            <strong>Artist:</strong>
+
+                            <%= song.artist %>
+
+                        </p>
+
+                        <span class="genre">
+
+                            <%= song.genre %>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            <% }); %>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 <%= appName %>. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
